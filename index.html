@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔶 Знаки жизни — регистрация</title>
+  <link rel="icon" type="image/svg+xml" href="assets/priority-road.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="poster-wrap">
+        <img src="assets/poster.png" alt="Афиша детской площадки Знаки жизни" class="poster" />
+      </div>
+
+      <div class="intro-card">
+        <div class="badge">Участие бесплатно</div>
+        <h1>Добро пожаловать на регистрацию!</h1>
+        <p>Мы рады, что вы хотите присоединиться к нашей детской площадке <strong>«Знаки жизни»</strong>.</p>
+        <p>В эти особенные дни ребят ждёт радостное и полезное время: игры, общение, новые знакомства, интересные занятия и важные библейские истины, которые помогут детям учиться делать правильный выбор в жизни.</p>
+        <p>Заполните, пожалуйста, короткую форму ниже, чтобы зарегистрировать ребёнка на площадку.</p>
+
+        <div class="details-grid" aria-label="Информация о площадке">
+          <div><span>Дата</span><strong>29 июня – 3 июля 2026</strong></div>
+          <div><span>Время</span><strong>10:00–17:00</strong></div>
+          <div><span>Место</span><strong>г. Саратов, ул. Вокзальная 6А</strong></div>
+          <div><span>Возраст</span><strong>5–14 лет</strong></div>
+        </div>
+
+        <p class="welcome">Мы с радостью ждём вас на детской площадке <strong>«Знаки жизни»</strong>! 💚</p>
+      </div>
+    </section>
+
+    <section class="form-section" id="registration">
+      <div class="form-card">
+        <div class="form-heading">
+          <span class="mini-label">Форма регистрации</span>
+          <h2>Зарегистрировать ребёнка</h2>
+        </div>
+
+        <form id="registrationForm" autocomplete="on">
+          <div class="field-row">
+            <label>
+              Город <span>*</span>
+              <input type="text" name="city" id="city" list="cityOptions" value="Саратов" placeholder="Выберите или введите город" required />
+              <datalist id="cityOptions">
+                <option value="Саратов"></option>
+                <option value="Другое"></option>
+              </datalist>
+            </label>
+
+            <label>
+              Церковь <span>*</span>
+              <input type="text" name="church" id="church" list="churchOptions" value="на Вокзальной" placeholder="Выберите или введите церковь" required />
+              <datalist id="churchOptions">
+                <option value="на Вокзальной"></option>
+                <option value="Другое"></option>
+              </datalist>
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              ФИО родителя <span>*</span>
+              <input type="text" name="parentName" placeholder="Фамилия Имя Отчество" required />
+            </label>
+
+            <label>
+              Номер телефона родителя <span>*</span>
+              <input type="tel" name="parentPhone" id="parentPhone" value="+7" inputmode="tel" minlength="12" placeholder="+7XXXXXXXXXX" required />
+            </label>
+          </div>
+
+          <label class="short-field">
+            Количество детей <span>*</span>
+            <select name="childrenCount" id="childrenCount" required>
+              <option value="1">1 ребёнок</option>
+              <option value="2">2 ребёнка</option>
+              <option value="3">3 ребёнка</option>
+              <option value="4">4 ребёнка</option>
+              <option value="5">5 детей</option>
+              <option value="6">6 детей</option>
+              <option value="7">7 детей</option>
+            </select>
+          </label>
+
+          <div id="childrenFields" class="children-box"></div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>Я даю согласие на обработку персональных данных, указанных в данной форме, с целью регистрации ребёнка/детей на детскую площадку «Знаки жизни» и связи по вопросам участия.</span>
+          </label>
+
+          <button type="submit">Зарегистрироваться</button>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="settings.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

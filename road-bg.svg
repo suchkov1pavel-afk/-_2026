@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00a3ff"/>
+      <stop offset="0.52" stop-color="#0750bd"/>
+      <stop offset="1" stop-color="#0d7b37"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#06214a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1100" fill="url(#sky)"/>
+  <circle cx="145" cy="120" r="180" fill="#fff" opacity="0.22"/>
+  <circle cx="1330" cy="95" r="220" fill="#ffd735" opacity="0.24"/>
+  <path d="M0 760 C230 660 420 765 640 690 C920 595 1110 760 1600 640 L1600 1100 L0 1100 Z" fill="#90d624" opacity="0.34"/>
+  <path d="M0 900 C290 795 520 915 820 825 C1090 745 1300 865 1600 780 L1600 1100 L0 1100 Z" fill="#136b24" opacity="0.36"/>
+  <path d="M1040 1100 C1000 870 965 705 880 560 L990 535 C1108 705 1162 898 1205 1100 Z" fill="#333333" opacity="0.28"/>
+  <path d="M1072 1080 C1040 895 1012 740 943 600" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-dasharray="64 46" opacity="0.48"/>
+  <g filter="url(#shadow)" opacity="0.42">
+    <g transform="translate(1230 300) rotate(45)">
+      <rect width="145" height="145" rx="16" fill="#ffd735" stroke="#ffffff" stroke-width="10"/>
+      <rect x="48" y="48" width="49" height="49" rx="8" fill="#ffffff"/>
+    </g>
+    <g transform="translate(185 455) rotate(45)">
+      <rect width="118" height="118" rx="14" fill="#ffd735" stroke="#ffffff" stroke-width="9"/>
+      <rect x="39" y="39" width="40" height="40" rx="7" fill="#ffffff"/>
+    </g>
+    <g transform="translate(1330 785) rotate(45)">
+      <rect width="100" height="100" rx="12" fill="#ffd735" stroke="#ffffff" stroke-width="8"/>
+      <rect x="33" y="33" width="34" height="34" rx="6" fill="#ffffff"/>
+    </g>
+  </g>
+  <g opacity="0.18" fill="#ffffff">
+    <circle cx="310" cy="210" r="22"/>
+    <circle cx="365" cy="168" r="14"/>
+    <circle cx="412" cy="220" r="19"/>
+    <circle cx="1190" cy="160" r="17"/>
+    <circle cx="1245" cy="210" r="25"/>
+    <circle cx="1298" cy="170" r="14"/>
+  </g>
+</svg>
